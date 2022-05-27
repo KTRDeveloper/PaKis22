@@ -12,8 +12,10 @@ EXEC = painless
 #           -D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS \
 #           -std=c++11 -O3 -D NDEBUG
 
+#LIBS = -lkissat -L../kissat/build \
+#       -lpthread -fopenmp -lz -lm -static
 LIBS = -lkissat -L../kissat/build \
-       -lpthread -fopenmp -lz -lm -static
+       -lpthread -fopenmp -lz -lm
 
 #CXXFLAGS = -I../kissat \
 #           -D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS \
